@@ -46,7 +46,7 @@ export class Question {
   }
   static listToHtml(questions) {
     return questions.length
-      ? `<ol>${questions.map((q) => `,<li>${q.text}</li>`).join('')}</ol>`
+      ? `<ol>${questions.map((q) => `<li>${q.text}</li>`).join('')}</ol>`
       : '<p>Вопросов пока нет</p>'
   }
 }
